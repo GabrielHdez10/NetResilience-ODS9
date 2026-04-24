@@ -28,19 +28,16 @@ graph TD
         A[MikroTik Router/Switch] -->|Métricas SNMP| B(Agente de Monitoreo Local)
     end
     
-    flowchart TD
-    Ciudadano[Ciudadano]
-    Operador[Operador municipal]
-    Admin[Administrador técnico]
-    Sistema[Sistema de Reporte de Infraestructura]
-    BD[(Base de datos)]
-    Panel[Panel de seguimiento]
-
-    Ciudadano -->|Envía reporte| Sistema
-    Operador -->|Consulta y actualiza incidencias| Sistema
-    Admin -->|Configura y audita| Sistema
-    Sistema --> BD
-    Sistema --> Panel
+   graph TD
+    subgraph Local_Infrastructure [Infraestructura Local - Xalapa]
+        A[MikroTik Router/Switch] -->|Métricas SNMP| B(Agente de Monitoreo Local)
+    end
+    
+    subgraph Cloud_Governance [Gobernanza en la Nube]
+        B -->|Datos Anonimizados| C{Pipeline de Ética CI/CD}
+        C -->|Validado| D[(Base de Datos InfluxDB)]
+        D --> E[Dashboard de Visualización]
+    end
 \\\
 
 ---
