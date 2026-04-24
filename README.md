@@ -22,24 +22,7 @@ Para garantizar la integridad y el impacto social positivo, este repositorio se 
 
 ## ??? Arquitectura de la Solución (Docs-as-Code)
 
-\\\mermaid
 graph TD
-    subgraph Local_Infrastructure [Infraestructura Local - Xalapa]
-        A[MikroTik Router/Switch] -->|Métricas SNMP| B(Agente de Monitoreo Local)
-    end
-    
-   graph TD
-    subgraph Local_Infrastructure [Infraestructura Local - Xalapa]
-        A[MikroTik Router/Switch] -->|Métricas SNMP| B(Agente de Monitoreo Local)
-    end
-    
-    ```mermaid
-graph TD
-    subgraph Local_Infrastructure [Infraestructura Local - Xalapa]
-        A[MikroTik Router/Switch] -->|Métricas SNMP| B(Agente de Monitoreo Local)
-    end
-    
-  graph TD
     subgraph Local_Infrastructure [Infraestructura Local - Xalapa]
         A[MikroTik Router/Switch] -->|Métricas SNMP| B(Agente de Monitoreo Local)
     end
