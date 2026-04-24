@@ -10,7 +10,8 @@ jobs:
 
       - name: Validar presencia de Declaracion de Etica
         run: |
-          if grep -qi "Etica" README.md; then
+          # El parametro -i ignora mayusculas/minusculas
+          if grep -qi "etica" README.md; then
             echo "? Checklist de etica aprobado."
           else
             echo "? ERROR: No se encontro la declaracion de etica en el README."

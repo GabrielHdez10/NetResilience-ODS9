@@ -1,37 +1,37 @@
-# NetResilience-ODS9 ??
+Ôªø# NetResilience-ODS9 ??
 ## Infraestructura Digital Sostenible para el Sector Industrial de Xalapa
 
-Este proyecto forma parte de la materia de Herramientas de CÛmputo en la Nube. Su objetivo es diseÒar una arquitectura de red monitoreada y resiliente que apoye al **ODS 9: Industria, InnovaciÛn e Infraestructura**.
+Este proyecto forma parte de la materia de Herramientas de C√≥mputo en la Nube. Su objetivo es dise√±ar una arquitectura de red monitoreada y resiliente que apoye al **ODS 9: Industria, Innovaci√≥n e Infraestructura**.
 
 ---
 
-## ?? AlineaciÛn con el ODS 9
-Nuestra soluciÛn busca reducir la brecha digital en las zonas industriales de Xalapa, proporcionando una infraestructura de red que sea:
+## ?? Alineaci√≥n con el ODS 9
+Nuestra soluci√≥n busca reducir la brecha digital en las zonas industriales de Xalapa, proporcionando una infraestructura de red que sea:
 1. **Resiliente:** Capaz de recuperarse ante fallos de hardware.
-2. **Sostenible:** Optimizada para bajo consumo energÈtico.
+2. **Sostenible:** Optimizada para bajo consumo energ√©tico.
 3. **Innovadora:** Utilizando monitoreo automatizado y gobernanza de datos moderna.
 
-## ?? DeclaraciÛn de …tica del Repositorio
+## ?? Declaraci√≥n de √âtica del Repositorio
 Para garantizar la integridad y el impacto social positivo, este repositorio se rige por los siguientes principios:
 
-* **Privacidad de Datos:** El sistema de monitoreo solo recolecta mÈtricas de rendimiento de hardware (uso de CPU, temperatura, estado de enlaces). **No se inspeccionan paquetes de datos de los usuarios** ni se almacenan direcciones IP privadas.
-* **Inclusividad:** La documentaciÛn est· diseÒada para ser entendida por tÈcnicos de distintos niveles, fomentando la transferencia de conocimiento.
-* **Transparencia:** Todo el cÛdigo de automatizaciÛn es auditable y libre de "backdoors" o sesgos que prioricen el tr·fico de ciertos sectores sobre otros.
+* **Privacidad de Datos:** El sistema de monitoreo solo recolecta m√©tricas de rendimiento de hardware (uso de CPU, temperatura, estado de enlaces). **No se inspeccionan paquetes de datos de los usuarios** ni se almacenan direcciones IP privadas.
+* **Inclusividad:** La documentaci√≥n est√° dise√±ada para ser entendida por t√©cnicos de distintos niveles, fomentando la transferencia de conocimiento.
+* **Transparencia:** Todo el c√≥digo de automatizaci√≥n es auditable y libre de "backdoors" o sesgos que prioricen el tr√°fico de ciertos sectores sobre otros.
 
 ---
 
-## ??? Arquitectura de la SoluciÛn (Docs-as-Code)
+## ??? Arquitectura de la Soluci√≥n (Docs-as-Code)
 
 \\\mermaid
 graph TD
     subgraph Local_Infrastructure [Infraestructura Local - Xalapa]
-        A[MikroTik Router/Switch] -->|MÈtricas SNMP| B(Agente de Monitoreo Local)
+        A[MikroTik Router/Switch] -->|M√©tricas SNMP| B(Agente de Monitoreo Local)
     end
     
     subgraph Cloud_Governance [Gobernanza en la Nube]
-        B -->|Datos Anonimizados| C{Pipeline de …tica CI/CD}
+        B -->|Datos Anonimizados| C{Pipeline de √âtica CI/CD}
         C -->|Validado| D[(Base de Datos InfluxDB)]
-        D --> E[Dashboard de VisualizaciÛn]
+        D --> E[Dashboard de Visualizaci√≥n]
     end
 
     style C fill:#f9f,stroke:#333,stroke-width:2px
@@ -39,7 +39,7 @@ graph TD
 
 ---
 
-## ??? TecnologÌas Utilizadas
+## ??? Tecnolog√≠as Utilizadas
 * **Versionamiento:** Git & GitHub con flujo de historial lineal.
-* **Gobernanza:** GitHub Actions para validaciÛn de est·ndares Èticos.
-* **DocumentaciÛn:** Mermaid.js para diagramas din·micos.
+* **Gobernanza:** GitHub Actions para validaci√≥n de est√°ndares √©ticos.
+* **Documentaci√≥n:** Mermaid.js para diagramas din√°micos.
