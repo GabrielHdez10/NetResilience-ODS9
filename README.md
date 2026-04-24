@@ -11,7 +11,7 @@ Nuestra solución busca reducir la brecha digital en las zonas industriales de X
 2. **Sostenible:** Optimizada para bajo consumo energético.
 3. **Innovadora:** Utilizando monitoreo automatizado y gobernanza de datos moderna.
 
-## ?? Declaración de Ética del Repositorio
+## ?? Declaración de Etica del Repositorio
 Para garantizar la integridad y el impacto social positivo, este repositorio se rige por los siguientes principios:
 
 * **Privacidad de Datos:** El sistema de monitoreo solo recolecta métricas de rendimiento de hardware (uso de CPU, temperatura, estado de enlaces). **No se inspeccionan paquetes de datos de los usuarios** ni se almacenan direcciones IP privadas.
