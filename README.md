@@ -33,11 +33,19 @@ graph TD
         A[MikroTik Router/Switch] -->|Métricas SNMP| B(Agente de Monitoreo Local)
     end
     
+    ```mermaid
+graph TD
+    subgraph Local_Infrastructure [Infraestructura Local - Xalapa]
+        A[MikroTik Router/Switch] -->|Métricas SNMP| B(Agente de Monitoreo Local)
+    end
+    
     subgraph Cloud_Governance [Gobernanza en la Nube]
         B -->|Datos Anonimizados| C{Pipeline de Ética CI/CD}
         C -->|Validado| D[(Base de Datos InfluxDB)]
         D --> E[Dashboard de Visualización]
     end
+
+    style C fill:#f9f,stroke:#333,stroke-width:2px
 \\\
 
 ---
