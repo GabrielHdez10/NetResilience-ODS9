@@ -1,4 +1,4 @@
-﻿# NetResilience-ODS9 ??
+# NetResilience-ODS9 ??
 ## Infraestructura Digital Sostenible para el Sector Industrial de Xalapa
 
 Este proyecto forma parte de la materia de Herramientas de Cómputo en la Nube. Su objetivo es diseñar una arquitectura de red monitoreada y resiliente que apoye al **ODS 9: Industria, Innovación e Infraestructura**.
@@ -43,3 +43,5 @@ graph TD
 * **Versionamiento:** Git & GitHub con flujo de historial lineal.
 * **Gobernanza:** GitHub Actions para validación de estándares éticos.
 * **Documentación:** Mermaid.js para diagramas dinámicos.
+
+
