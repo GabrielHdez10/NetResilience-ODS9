@@ -1,0 +1,1 @@
+Scan Result: No secrets found. Repository is safe.
